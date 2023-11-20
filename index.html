@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candaba - Home</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Robot:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="logo.png" class="logo" alt="Candaba Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Features.html">FEATURES</a></li>
+          <li id="places-link"><a href="attractions.html">PLACES</a></li>
+          <div class="menu-container">
+            <div class="menu-button">
+              <img src="./img/menu.png" class="menu-icon" alt="Menu Icon">
+            </div>
+            <div class="dropdown-content">
+              <a href="history.html">History</a>
+              <a href="coming-soon.html">Municipal Info Page</a>
+              <a href="Government.html">Government</a>
+              <a href="creators.html">About Creators</a>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    
+
+  <center>
+    
+    <header>
+        <h1>Explore Candaba</h1>
+    </header>
+
+    <div class="row">
+    <div class="card">
+      <h2>Events</h2> 
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="./img/events1.JPG" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/events2.jfif" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/events3.jpg" alt="Image 3">
+          </div>
+        </div>
+        <div class="carousel-prev">&#10094;</div>
+        <div class="carousel-next">&#10095;</div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+  <div class="card">
+  <h2>Features</h2>
+
+  <div class="carousel">
+    <a href="Features.html">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="./img/features1t.jpg" alt="Image 4">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/features2.jpg" alt="Image 5">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/features3.jpg" alt="Image 6">
+      </div>
+    </div>
+  </a>
+    <div class="carousel-prev">&#10094;</div>
+    <div class="carousel-next">&#10095;</div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+<div class="card">
+  <h2>Places</h2>
+
+  <div class="carousel">
+    <a href="attractions.html">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="./img/places1.jpeg" alt="Image 7">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/places2.jpg" alt="Image 8">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/places3.jfif" alt="Image 9">
+      </div>
+    </div>
+    </a>
+    <div class="carousel-prev">&#10094;</div>
+    <div class="carousel-next">&#10095;</div>
+  </div>
+
+</div>
+</div>
+</center>
+  <script>
+    const carousels = document.querySelectorAll('.carousel-inner');
+    const prevButtons = document.querySelectorAll('.carousel-prev');
+    const nextButtons = document.querySelectorAll('.carousel-next');
+    
+    function updateCarousel(carouselIndex, direction) {
+      const numImages = carousels[carouselIndex].children.length;
+      const currentItemIndex = direction === 'prev'
+        ? (currentIndex[carouselIndex] - 1 + numImages) % numImages
+        : (currentIndex[carouselIndex] + 1) % numImages;
+
+      currentIndex[carouselIndex] = currentItemIndex;
+
+      carousels[carouselIndex].style.transform = `translateX(-${currentItemIndex * (100 / numImages)}%)`;
+    }
+
+    const currentIndex = [0, 0, 0]; // One for each carousel
+
+    for (let i = 0; i < carousels.length; i++) {
+      prevButtons[i].addEventListener('click', () => {
+        updateCarousel(i, 'prev');
+      });
+
+      nextButtons[i].addEventListener('click', () => {
+        updateCarousel(i, 'next');
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+  const menuContainer = document.querySelector('.menu-container');
+  
+  menuContainer.addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+});
+
+  </script>
+
+<footer><center>
+            <p><br><b>© 2023 Candaba. All rights reserved.</b></p>
+          </center></footer>
+
+</body>
+</html>

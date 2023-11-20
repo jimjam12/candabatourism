@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="css/abouthistory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-vEFE3DM6P8IbU/cC6Lr0Xw8SXTCXsFMAbqD3Ru4ePRjQ+/Ii8vcwwBRB0qZn8pog1/J4YzJ7lVJbrYIRtXHK1YQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-cKl4CyC7dsf5Ce+snZOZOVNTqXZyEEc+htxqxNGUE7vTcU5goiQz79PB6vjJLdPDC3t2jOmiCLhXwft5bHkDAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+        integrity="sha512-vEFE3DM6P8IbU/cC6Lr0Xw8SXTCXsFMAbqD3Ru4ePRjQ+/Ii8vcwwBRB0qZn8pog1/J4YzJ7lVJbrYIRtXHK1YQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+        integrity="sha512-cKl4CyC7dsf5Ce+snZOZOVNTqXZyEEc+htxqxNGUE7vTcU5goiQz79PB6vjJLdPDC3t2jOmiCLhXwft5bHkDAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <a href="index.html
+">
+                <img src="logo.png" class="logo" alt="Candaba Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Features.html">FEATURES</a></li>
+                <li id="places-link"><a href="attractions.html">PLACES</a></li>
+                <li class="menu-item">
+                    <div class="menu-container">
+                        <div class="menu-button">
+                            <img src="./img/menu.png" class="menu-icon" alt="Menu Icon">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="history.html">History</a>
+                            <a href="coming-soon.html">Municipal Info Page</a>
+                            <a href="creators.html">About Creators</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section class="first" id="first">
+            <div class="wrapper">
+                <div class="testimonial">
+                    <article>
+                        <h2>Candaba's History</h2>
+                            <!-- <img src="images/.png"> -->
+                            <h5>
+                                formerly "Candawe"
+                            </h5>
+                            <p>
+                
+                                
+                            </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="second" id="second">
+            <div class="wrapper2">
+                <div class="testimonial2">
+                    <article>
+                        <h3>Agriculture</h3>
+                        <h4>Farming</h4>
+                        <h6>Sweet Watermelons</h6>
+                        <h4>Animal Products</h4>
+                        <h6>Duck Eggs</h6>
+                        <h4>Fishing</h4>
+                        <h6>Tilapia</h6>
+                        
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="third" id="third">
+            <div class="wrapper3">
+                <div class="testimonial3">
+                    <article>
+                        <h1>Some Other History Info</h1>
+                        <h4><a href="http://www.geocities.ws/mun_of_candaba/introduction#:~:text=Candaba%2C%20once%20known%20as%20Candawe,of%20the%20town%20in%201593.">
+                            "One of the oldest settlements during the pre-hispanic time, and long before the encomonderos took hold of the town in 1593"</a></h4>
+                        
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuButtons = document.querySelectorAll('.menu-button');
+
+        menuButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                const menuContainer = this.closest('.menu-container');
+                menuContainer.classList.toggle('active');
+            });
+        });
+    });
+</script>
+</script>
+</body>
+</html>

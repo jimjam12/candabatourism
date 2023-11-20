@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Robot:wght@400;700&display=swap"
+  rel="stylesheet">
+  <div class="navbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="logo.png" class="logo" alt="Candaba Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Features.html">FEATURES</a></li>
+        <li id="places-link"><a href="attractions.html">PLACES</a></li>
+        <div class="menu-container">
+          <div class="menu-button">
+            <img src="./img/menu.png" class="menu-icon" alt="Menu Icon">
+          </div>
+          <div class="dropdown-content">
+            <a href="history.html">History</a>
+            <a href="coming-soon.html">Municipal Info Page</a>
+            <a href="Government.html">Government</a>
+            <a href="creators.html">About Creators</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </div>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="creators.css">
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('./imgs/CANDABA BG.jpeg'); /* Replace with the actual path to your candaba image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+    }
+
+    .meet-the-team {
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    }
+
+    .creators {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .creator {
+      background-color: rgba(167, 159, 159, 0.5); /* More transparent white background */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .imageContainer {
+      margin-bottom: 10px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 100%; /* Maintain a 1:1 aspect ratio (square) */
+    }
+
+    .imageContainer img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the entire image is visible within the container */
+      border-radius: 50%; /* Make the image circular */
+    }
+
+    .bio {
+      color: #000000;
+    }
+  </style>
+  <title>Creators Page</title>
+</head>
+
+<body>
+  <div class="meet-the-team">
+    <h1>Meet the Team</h1>
+  </div>
+
+  <div class="creators">
+    <div class="creator">
+      <div class="imageContainer">
+        <img src="./imgs/member chig.jpg" alt="Rafael Canlas Avatar">
+      </div>
+      <h2>Rafael Canlas</h2>
+      <p class="bio">Contact: rlcanlas@student.hau.edu.ph</p>
+    </div>
+    <div class="creator">
+      <div class="imageContainer">
+        <img src="./imgs/member steven.jpg" alt="Steven Dizon Avatar">
+      </div>
+      <h2>Steven Dizon</h2>
+      <p class="bio">Contact: sddizon1@student.hau.edu.ph</p>
+    </div>
+    <div class="creator">
+      <div class="imageContainer">
+        <img src="./imgs/member drix.png" alt="Hendrix Patricio Avatar">
+      </div>
+      <h2>Hendrix Patricio</h2>
+      <p class="bio">Contact: jgpatricio@student.hau.edu.ph</p>
+    </div>
+    <div class="creator">
+      <div class="imageContainer">
+        <img src="./imgs/member jaz.jpg" alt="Jaz Sanchez Avatar">
+      </div>
+      <h2>Jaz Sanchez</h2>
+      <p class="bio">Contact: Jfsanchez1@student.hau.edu.ph</p>
+    </div>
+  </div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const menuContainer = document.querySelector('.menu-container');
+  
+  menuContainer.addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+});
+
+</script>
+
+</html>
